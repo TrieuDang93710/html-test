@@ -1,0 +1,231 @@
+.footer{
+    z-index: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #171b2a;
+    padding: 10px;
+}
+.footer_main{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.footer_top{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.footer_top_left{
+    width: 15%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    gap: 15px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+.logo i{
+    font-size: 24px;
+    color: tomato;
+    font-weight: 600;
+}
+.logo .title{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+.footer_top_left p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    color: rgba(255,255,255,0.4);
+    line-clamp: 3;
+}
+.group_icon{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+.icon{
+    padding: 10px;
+    border: 1px solid tomato;
+}
+.icon i{
+    font-size: 13px;
+    color: tomato;
+    font-weight: 600;
+}
+.footer_top_middle{
+    width: 30%;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.list_menu{
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    gap: 15px;
+}
+.list_menu p{
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+}
+.list_menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    gap: 13px;
+}
+.list_menu ul li{
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+}
+.footer_top_right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+}
+.address, .form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 15px;
+}
+.address p, .form p{
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+}
+.address span{
+    display: -webkit-box;
+    width: 56%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+    overflow: hidden;
+    line-height: 16px;
+}
+.form{
+    width: 100%;
+}
+.form form {
+    width: 100%;
+}
+.form form .input{
+    width: 60%;
+    line-height: 30px;
+    background: none;
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #fff;
+}
+.form form i{
+    font-size: 26px;
+    color: tomato;
+    font-weight: 600;
+    margin-left: -30px;
+}
+.footer_bottom{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.footer_bottom div{
+    padding: 5px 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #fff;
+}
+.footer_bottom div p{
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+}
+.footer_bottom p{
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+}
+
+/*responsive for header*/
+@media (max-width:768px) {
+    .footer_top{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .footer_top_left{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        gap: 15px;
+    }
+    .footer_top_middle{
+        width: 100%;
+        padding: 20px 0;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .footer_top_right{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .footer_bottom{
+        margin: 0 auto;
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+        gap: 10px;
+    }
+}
+@media (min-width: 992px) {
+
+}

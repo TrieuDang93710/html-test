@@ -1,0 +1,272 @@
+.banner, .commercial{
+    position: relative;
+    padding: 80px 0;
+    width: 100%;
+    height: 50vh;
+    background: #f2f6f7;
+    z-index: 0px;
+}
+.content{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.left{
+    width: 30%;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.left h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.left p{
+    display: -webkit-box;
+    width: 56%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 10px;
+    color: rgba(0,0,0,0.4);
+}
+.left button {
+    width: 60%;
+    padding: 15px 20px;
+    background: tomato;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+}
+.right{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    background: #c4c4c4;
+}
+.cost{
+    position: absolute;
+    left: -15px;
+    bottom: -15px;
+    width: 200px;
+    height: 150px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 3px 3px 2px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    gap: 15px;
+}
+.cost i{
+    font-size: 35px;
+    color: tomato;
+    font-weight: 600;
+}
+.cost h4{
+    font-size: 25px;
+    font-weight: 600;
+}
+.cost p{
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+}
+.pause{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px 25px;
+    background: tomato;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-top-left-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+
+/*commercial css*/
+.commercial, .commercial_top{
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.commercial_top{
+    width: 40%;
+}
+.commercial_top h1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+.commercial_top p{
+    display: -webkit-box;
+    width: 80%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+}
+.commercial_bottom{
+    width: 90%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.card{
+    width: 20%;
+    height: 25vh;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.card:hover{
+    cursor: pointer;
+    background: #ff5a3c;
+}
+.card div{
+    background: rgb(245, 223, 220, 0.9);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card div i{
+    font-size: 16px;
+    font-weight: 600;
+    color: tomato;
+}
+.card div i:hover{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+.card p{
+    text-align: center;
+}
+/*responsive for header*/
+@media (max-width:768px) {
+    .banner{
+        position: relative;
+        padding: 80px 0;
+        width: 100%;
+        height: auto;
+        background: #f2f6f7;
+    }
+    .content{
+        width: 100%;
+        height: 50vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 5px;
+    }
+    .left{
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+    .right{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #c4c4c4;
+    }
+    .cost{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 200px;
+        height: 150px;
+        padding: 15px;
+        background: #fff;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 2px 3px 3px 2px rgba(0,0,0,0.08);
+    
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    /*0*/
+    .commercial{
+        position: relative;
+        padding: 80px 0;
+        width: 100%;
+        height: auto;
+        z-index: 0px;
+    }
+    .commercial_top{
+        width: 100%;
+    }
+    .commercial_bottom{
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    .card{
+        width: 80%;
+        height: 25vh;
+        padding: 10px 15px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.08);
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+}

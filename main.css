@@ -1,0 +1,97 @@
+.container {
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    /* border: 1px solid black; */
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal{
+    position: absolute;
+    min-width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 20px;
+}
+.modal .close{
+    position: absolute;
+    z-index: 30;
+    top: 80px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+}
+.modal .close i{
+    font-size: 20px;
+    font-weight: 600;
+    color: #233638;
+}
+.modal_content{
+    position: absolute;
+    left: 0;
+    padding-top: 100px;
+    min-width: 25%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 80px;
+}
+.modal_nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.modal_nav .button{
+    width: 100%;
+}
+.modal_content ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start; 
+    gap: 20px;
+}
+.modal_content ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start; 
+
+    list-style: none;
+}
+
+.modal_content ul .active a{
+    color: #ff5a3c;
+}
+.modal_content ul .active::after{
+    position: absolute;
+    bottom: -3px;
+    left: 5px;
+    content: '';
+    width: 40px;
+    height: 2px;
+    background: #ff5a3c;
+}
+.modal_content ul li a{
+    text-decoration: none;
+    color: #233638;
+    font-size: 15px;
+    font-weight: 600;
+}
+.modal_content ul li a:hover{
+    text-decoration: none;
+    color: #ff5a3c;
+    font-size: 15px;
+    font-weight: 600;
+}
