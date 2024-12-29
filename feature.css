@@ -1,0 +1,134 @@
+.feature{
+    position: relative;
+    padding: 80px 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.feature .feature_top{
+    width: 60%;
+}
+.feature .feature_title{
+    width: 100%;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feature .feature_title p{
+    display: -webkit-box;
+    width: 60%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: start;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+}
+.feature .feature_title ul{
+    list-style: none;
+
+    display: flex;
+    justify-content: start;
+    gap: 25px;
+}
+
+.feature .feature_title ul li{
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+}
+
+.feature .feature_bottom{
+    width: 80%;
+    height: 100%;
+}
+
+.feature_item{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.feature .feature_bottom .feature_card{
+    position: relative;
+    width: 25%;
+    height: 25vh;
+    border: 1px solid tomato;
+    background-image: url('https://media.architecturaldigest.com/photos/65dcba2957f12e816fa53819/master/pass/GettyImages-919900950.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature .feature_bottom .feature_item .feature_card .icon_text,
+.feature .feature_bottom .feature_item .feature_card .cost_next_icon{
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 70%;
+    height: 50px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 10px;
+    /* color: rgba(0,0,0,0.6); */
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.feature .feature_bottom .feature_item .feature_card .cost_next_icon{
+    left: 0;
+    bottom: 0;
+    color: tomato;
+    background: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cost_next_icon .feature_cost{
+    width: 60%;
+    height: 50px;
+    background: #fff;
+    padding: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.cost_next_icon .feature_icon_next{
+    width: 40%;
+    height: 50px;
+    color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cost_next_icon .feature_icon_next:hover{
+    width: 40%;
+    height: 50px;
+    background: #fff;
+    color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature .feature_bottom .feature_item{
+    display: none;
+}
+.feature .feature_bottom .show{
+    display: block;
+}

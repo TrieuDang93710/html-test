@@ -1,0 +1,336 @@
+.slider, .project{
+    position: relative;
+    padding: 80px 0;
+    width: 100%;
+    height: 50vh;
+    background: #f2f6f7;
+    z-index: 0px;
+}
+
+.slider, .slider_top, .project, .project_top{
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.slider_top, .project_top{
+    width: 40%;
+}
+.slider_top h1, .project_top h1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+.slider_top p, .project_top p{
+    display: -webkit-box;
+    width: 80%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+}
+.slider_bottom{
+    position: relative;
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.slider_bottom .left{
+    position: relative;
+    width: 25%;
+    height: 100%;
+}
+.slider_bottom .left::before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 70%;
+    height: 90%;
+    background: tomato;
+    border-radius: 10px;
+}
+.slider_bottom .left::after{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    content: '';
+    width: 70%;
+    height: 90%;
+    background: #c4c4c4;
+    border-radius: 10px;
+}
+.slider_bottom .right{
+    position: relative;
+    background: none;
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 15px;
+}
+.slider_bottom .right i{
+    font-size: 24px;
+    color: tomato;
+    font-weight: 700;
+}
+.slider_bottom .right p{
+    display: -webkit-box;
+    width: 80%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-align: start;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+}
+.slider_bottom .right .star{
+    padding: 10px 0;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+.slider_bottom .right .star p i{
+    font-size: 16px;
+    color: yellow;
+    font-weight: 700;
+}
+.slider_bottom .right .text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+.slider_bottom .right .text h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.slider_bottom .right .text p{
+    display: -webkit-box;
+    width: 80%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: start;
+    font-size: 16px;
+    color: rgba(0,0,0,0.6);
+}
+.slider_bottom .prev{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid tomato;
+    color: tomato;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider_bottom .prev:hover{
+    background: tomato;
+    color: #fff;
+}
+.slider_bottom .next{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 50%;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px;
+    background: tomato;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*css for project*/
+.project{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.project_middle{
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.project_middle .address{
+    width: 20%;
+    height: 30%;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background: #8a8a8a;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.project_middle .address:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 1px 2px rgba(0,0,0,0.6);
+}
+.project_middle .address p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.project_middle .address span{
+    display: -webkit-box;
+    width: 40%;
+    height: 20px;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    padding: 10px 20px;
+    color: tomato;
+    background: #fff;
+    border-radius: 10px;
+}
+.project_bottom{
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.project_bottom .form_control{
+    width: 60%;
+    padding: 0 10px;
+    height: 60px;
+    background: #f5f5f5;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.project_bottom .form_control i{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.6);
+}
+.project_bottom .form_control form{
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+.project_bottom .form_control form input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+}
+.project_bottom .form_control form button{ 
+    width: 80%;
+    height: 90%;
+    background: tomato;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+}
+@media (max-width:768px) {
+    .slider_bottom .right{
+        position: relative;
+        background: none;
+        width: 40%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 15px;
+
+        text-overflow: ellipsis;
+    }
+    /*css for projects build*/
+    .project_middle{
+        width: 80%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .project_middle .address{
+        width: 80%;
+        height: 40%;
+        padding: 20px 10px;
+        border-radius: 10px;
+        background: #8a8a8a;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+    .slider_top h1, .project_top h1 {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .project_bottom{
+        width: 80%;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .project_bottom .form_control{
+        width: 80%;
+        padding: 0 10px;
+        height: 60px;
+        background: #f5f5f5;
+        border-radius: 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

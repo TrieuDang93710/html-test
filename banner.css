@@ -1,4 +1,4 @@
-.banner, .commercial{
+.banner, .commercial, .dream, .about, .service, .recommend{
     position: relative;
     padding: 80px 0;
     width: 100%;
@@ -180,6 +180,356 @@
 .card p{
     text-align: center;
 }
+/*dream life css*/
+.dream {
+    background: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.dream .left{
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+.dream .left::before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 60%;
+    height: 70%;
+    background: #c4c4c4;
+}
+.dream .left::after{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    content: '';
+    width: 60%;
+    height: 80%;
+    background: #c4c4c4;
+}
+.dream .left .rating{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: #071c1f;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dream .left .rating i{
+    font-size: 20px;
+    color: tomato;
+}
+.dream .left .rating p{
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+}
+.dream .right{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    background: #fff;
+    padding: 10px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+}
+.dream .right h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.dream .right p{
+    display: -webkit-box;
+    width: 80%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: start;
+    font-size: 10px;
+    color: rgba(0,0,0,0.6);
+}
+.dream .right .list_group{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 5px;
+}
+.dream .right .list_group .group{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px 20px;
+}
+.dream .right .list_group .group:hover{
+    box-sizing: border-box;
+    box-shadow: 2px 3px rgba(0,0,0,0.08);
+}
+.dream .right .list_group .group i{
+    font-size: 30px;
+    color: tomato;
+    font-weight: 600;
+}
+.dream .right .list_group .group .text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 15px;
+}
+.dream .right .list_group .group .text h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+/*about section css*/
+.about{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.about .left{
+    position: relative;
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+}
+.about .left h4{
+    font-size: 16px;
+    font-weight: 700;
+}
+.about .left h4 i{
+    color: tomato;
+}
+.about .left h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.about .left p{
+    display: -webkit-box;
+    width: 80%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    font-weight: 700;
+}
+.about .left ul {
+    padding: 10px 20px;
+    list-style: square;
+    color: tomato;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 15px;
+}
+.about .left ul li p{
+    display: -webkit-box;
+    width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(0,0,0,0.6);
+}
+.about .right{
+    position: relative;
+    width: 40%;
+    height: 50vh;
+    background: #fff;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+.about .right > div {
+    background-color: #c4c4c4;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+.about .right .item1{
+    grid-column-start: 3;
+    grid-column-end: 1;
+}
+/*css for service section*/
+.service{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    background: #f2f6f7;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.service .card_group{
+    width: 80%;
+    padding: 15px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.service .card_group .card{
+    width: 30%;
+    height: 30vh;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+.service .card_group .card p{
+    display: -webkit-box;
+    width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(0,0,0,0.6);
+}
+/*css for recommend*/
+.recommend{
+    height: auto;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recommend .card_group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recommend .card_group .recommend_card {
+    width: 30%;
+    height: 100%;
+    background: #fff;
+    padding: 0 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.recommend .card_group .recommend_card .image{
+    position: relative;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recommend .card_group .recommend_card .image img{
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+
+}
+.recommend .card_group .recommend_card .image .icon{
+    position: absolute;
+    text-align: center;
+    width: 10px;
+    height: 10px;
+    left: 10px;
+    bottom: 5px;
+    border-radius: 50%;
+    padding: 10px;
+    background: tomato;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recommend .card_group .recommend_card .image .icon i{
+    color: #fff;
+}
+.recommend .card_group .recommend_card .r_right{
+    width: 80%;
+    height: 100%;
+    padding: 15px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+.recommend .card_group .recommend_card .r_right .price{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.recommend .card_group .recommend_card .r_right .price h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.recommend .card_group .recommend_card .r_right .price p{
+    display: -webkit-box;
+    width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(0,0,0,0.6);
+}
+.recommend .card_group .recommend_card .r_right .infor{
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.recommend .card_group .recommend_card .r_right .infor div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+.recommend .card_group .recommend_card .r_right .infor  p{
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.08);
+    padding: 10px;
+    color: tomato;
+}
 /*responsive for header*/
 @media (max-width:768px) {
     .banner{
@@ -234,7 +584,7 @@
         gap: 15px;
     }
 
-    /*0*/
+    /*commercial section*/
     .commercial{
         position: relative;
         padding: 80px 0;
@@ -267,6 +617,135 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 15px;
+    }
+    /*dream section css*/
+    .dream {
+        background: #fff;
+        width: 100%;
+        height: 100vh;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .dream .left{
+        position: relative;
+        width: 80%;
+        height: 100%;
+    }
+    .dream .left::before{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: '';
+        width: 60%;
+        height: 70%;
+        background: #c4c4c4;
+    }
+    .dream .left::after{
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        content: '';
+        width: 60%;
+        height: 80%;
+        background: #c4c4c4;
+    }
+    .dream .right{
+        position: relative;
+        width: 90%;
+        height: 100%;
+        background: #fff;
+        padding: 10px 0;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .about{
+        background: #fff;
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .about .left{
+        position: relative;
+        width: 80%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 20px;
+    }
+    .about .right{
+        position: relative;
+        width: 80%;
+        height: 50vh;
+        background: #fff;
+    
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+    }
+    /*css for service*/
+    .service .card_group{
+        width: 80%;
+        padding: 15px 0;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .service .card_group .card{
+        width: 100%;
+        height: 30vh;
+        padding: 10px 15px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        background: #fff;
+        box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.08);
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 15px;
+    }
+    .service  p{
+        display: -webkit-box;
+        width: 80%;
+        text-align: center;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-size: 16px;
+        font-weight: 700;
+        color: rgba(0,0,0,0.6);
+    }
+    /**/
+    .recommend .card_group .recommend_card {
+        width: 90%;
+        height: 100%;
+        background: #fff;
+        padding: 0 10px;
+        border-radius: 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         gap: 15px;
     }
 }
